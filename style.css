@@ -7,19 +7,19 @@ body {
 .grid {
   display: flex;
   flex-wrap: wrap;
-  width: 420px;
-  height: 420px;
+  width: 840px;
+  height: 840px;
   border: solid black;
 }
 
 .grid div {
-  width: 15px;
-  height: 15px;
+  width: 30px;
+  height: 30px;
 }
 
 .pac-dot {
   background-color: green;
-  border: 5px solid white;
+  border: 10px solid white;
   box-sizing: border-box;
 }
 
@@ -27,21 +27,44 @@ body {
   background-color: blue;
 }
 
-.ghost-lair {
-  background-color: pink;
-}
-
 .power-pellet {
   background-color: green;
-  border-radius: 7.5px;
-}
-
-.empty {
-  background-color: white;
+  border-radius: 15px;
 }
 
 .pacman {
+  background-image: url("image/joop.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.left {
+  transform: scaleX(-1);
+}
+
+.blinky {
+  background-color: red;
+  border: none;
+}
+
+.pinky {
+  background-color: pink;
+  border: none;
+}
+
+.inky {
+  background-color: aqua;
+  border: none;
+}
+
+.clyde {
   background-color: orange;
-  border-radius: 7.5px;
+  border: none;
+}
+
+.scared-ghost {
+  background-color: aquamarine;
   border: none;
 }

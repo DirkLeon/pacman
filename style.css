@@ -1,36 +1,20 @@
 html,
 body {
-  margin: 10px;
-  padding: 10px;
-}
-
-body {
-  background-color: #ffccf9;
+  margin: 10;
+  padding: 10;
 }
 
 .grid {
-  margin-top: 30px;
-  width: 420px;
-  height: 420px;
-  border: solid black 8px;
-  border-radius: 5px;
   display: flex;
   flex-wrap: wrap;
+  width: 420px;
+  height: 420px;
+  border: solid black;
 }
 
 .grid div {
   width: 15px;
   height: 15px;
-  background-color: blue;
-}
-
-.wall {
-  background-color: blue;
-}
-
-.power-pellet {
-  background-color: green;
-  border-radius: 7.5px;
 }
 
 .pac-dot {
@@ -39,23 +23,25 @@ body {
   box-sizing: border-box;
 }
 
-.pac-man {
-  background-color: yellow;
-  border-radius: 7.5px;
+.wall {
+  background-color: blue;
 }
 
-.inky {
-  background-color: cyan;
-}
-
-.blinky {
-  background-color: red;
-}
-
-.pinky {
+.ghost-lair {
   background-color: pink;
 }
 
-.clyde {
+.power-pellet {
+  background-color: green;
+  border-radius: 7.5px;
+}
+
+.empty {
+  background-color: white;
+}
+
+.pacman {
   background-color: orange;
+  border-radius: 7.5px;
+  border: none;
 }

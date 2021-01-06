@@ -199,8 +199,6 @@ function moveGhost(ghost) {
   console.log(direction);
 
   ghost.timerId = setInterval(function () {
-    //all our code
-    //if the next square does NOT contain a wall and does not contain a ghost
     if (
       !squares[ghost.currentIndex + direction].classList.contains("wall") &&
       !squares[ghost.currentIndex + direction].classList.contains("ghost")
@@ -268,6 +266,6 @@ function checkForWin() {
     //remove the eventListener for the control function
     document.removeEventListener("keyup", control);
     //tell our user we have won
-    scoreDisplay.innerHTML = "You WON!";
+    scoreDisplay.innerHTML = "You WON with " + score + " points!";
   }
 }
